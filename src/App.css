@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background: #F4F6F9;
+}
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  background: #fff;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  margin: 32px 0;
+  font-size: 24px;
+}
+.title{
+  justify-content: center;
+  display: flex;
+  padding-top: 30px;
+  margin-bottom: -130px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 7px;
+  margin-right: 5px;
+  border: 2px solid #444;
+  outline: none;
+  width: 320px;
+  background: transparent;
+}
+
+.todo-input:focus{
+  border-color: red;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  outline: none;
+  background: #007bff;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-input.edit {
+  border: 2px solid #149fff;
+}
+
+.todo-button.edit {
+  background: #5d0cff;
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #333;
+  background: #E3F2FD;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  color: #EF5350;
+  margin: 0 auto;
+  display: block;
+}
+
+.edit-icon {
+  color: #1976D2;
+  margin: 0 auto;
+  display: block;
+}
+
+.box{
+  border: 1px solid #B0BEC5;
+  padding: 6px;
+  width: 45px;
+  border-radius: 5px;
+  margin: 0 3px;
+  align-items: center;
+  background-color: #fff;
+}
+
+.empty{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #333;
+  background: #E3F2FD;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
